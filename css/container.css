@@ -25,6 +25,11 @@
   font-size: 1.7rem;
 }
 
+.elements_grid > button >a {
+  font-size: 1.7rem;
+  color: white;
+}
+
 #div_contact {
   display: flex;
   flex-flow: column nowrap;

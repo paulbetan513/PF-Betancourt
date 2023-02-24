@@ -26,3 +26,10 @@
     font-size: 1.7rem !important;
   }
 }
+
+@media (max-width: 992px) {
+  #grid_container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
