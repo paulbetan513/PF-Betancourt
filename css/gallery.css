@@ -1,0 +1,19 @@
+#galeria {
+  padding: 2rem;
+  gap: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+#galeria > div {
+  flex: 45%;
+  text-align: center;
+}
+
+.item {
+  font-size: 3rem;
+  width: 100%;
+}
+
+/*# sourceMappingURL=gallery.css.map */

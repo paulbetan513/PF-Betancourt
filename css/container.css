@@ -10,22 +10,18 @@
 .elements_grid {
   flex-basis: 50%;
 }
-
 .elements_grid > h2 {
   margin-bottom: 2rem;
 }
-
 .elements_grid > p {
   text-align: justify;
   font-size: 1.7rem;
   margin-bottom: 2rem;
 }
-
 .elements_grid > button {
   font-size: 1.7rem;
 }
-
-.elements_grid > button >a {
+.elements_grid > button > a {
   font-size: 1.7rem;
   color: white;
 }
@@ -36,7 +32,7 @@
   font-size: 1.5rem;
 }
 
-form {
+.subscribe {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -46,3 +42,34 @@ form {
 form input, button {
   font-size: 2rem !important;
 }
+
+#contact-form {
+  display: flex;
+  flex-flow: column;
+  box-sizing: content-box;
+  gap: 2rem;
+  padding: 3rem;
+}
+#contact-form > .form-group {
+  display: flex;
+  gap: 1rem;
+}
+#contact-form > .form-group .basis-4-12 {
+  width: 100%;
+  flex-basis: 27%;
+}
+#contact-form > .form-group .basis-8-12 {
+  width: 100%;
+  flex-basis: 83%;
+}
+#contact-form > .form-group .basis-12-12 {
+  width: 100%;
+  flex-basis: 100%;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+}
+
+/*# sourceMappingURL=container.css.map */

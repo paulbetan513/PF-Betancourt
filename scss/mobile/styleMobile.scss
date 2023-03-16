@@ -1,0 +1,19 @@
+@import '../variables.scss';
+@import './mobileContainer.scss';
+@import './mobileGallery.scss';
+@import './mobileStyle.scss';
+
+@media (max-width: $breakpoint-x-small) {
+  @include gridContainer--x-small();
+  @include galeria--x-small();
+  @include style--x-small();
+}
+
+@media (max-width: $break-point-large) {
+  @include gridContainer--large();
+  @include style--large();
+}
+
+@media (max-width: $break-point-extra-large) {
+  @include style--extra-large();
+}

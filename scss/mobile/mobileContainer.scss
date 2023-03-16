@@ -1,0 +1,37 @@
+@import '../variables.scss';
+
+@mixin gridContainer--x-small() {
+  #grid_container {
+    display: flex;
+    flex-direction: column;
+    padding: $three-rm;
+    text-align: center;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+
+    & .hidden_mobile {
+      display: none;
+    }
+
+    & .elements_grid>p {
+      text-align: center;
+    }
+  }
+
+  #div_contact h3 {
+    font-size: 1.7rem;
+  }
+
+  form input,
+  button {
+    font-size: 1.7rem !important;
+  }
+}
+
+@mixin gridContainer--large() {
+  #grid_container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

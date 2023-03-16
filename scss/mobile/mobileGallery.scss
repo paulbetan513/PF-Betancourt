@@ -1,0 +1,12 @@
+@import '../variables.scss';
+
+@mixin galeria--x-small() {
+  #galeria {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+  }
+}

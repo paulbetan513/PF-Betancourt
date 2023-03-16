@@ -1,0 +1,86 @@
+@import 'variables.scss';
+
+#grid_container {
+  display: flex;
+  gap: 5rem;
+  padding: 4.5rem 5rem 4.5rem 10rem;
+  align-items: center;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.elements_grid {
+  flex-basis: 50%;
+  
+  & > h2 {
+  margin-bottom: $two-rm;
+  }
+
+  & > p {
+    text-align: justify;
+    font-size: 1.5rem;
+    margin-bottom: $two-rm;
+  }
+
+  & > button {
+    font-size: 1.7rem;
+  }
+
+  & > button > a {
+    font-size: 1.7rem;
+    color: white;
+  }
+}
+
+#div_contact {
+  display: flex;
+  flex-flow: column nowrap;
+  font-size: 1.5rem;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+form input, button {
+  font-size: $two-rm !important;
+}
+
+#contact-form {
+  display: flex;
+  flex-flow: column;
+  box-sizing: content-box;
+  gap: 2rem;
+  padding: 3rem;
+
+  & > .form-group {
+    display: flex;
+    gap: 1rem;
+  }
+
+  & > .form-group .basis-4-12 {
+    width: 100%;
+    flex-basis: 27%;
+  }
+
+  & > .form-group .basis-8-12 {
+    width: 100%;
+    flex-basis: 83%;
+  }
+
+  & > .form-group .basis-12-12 {
+    width: 100%;
+    flex-basis: 100%;
+  }
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+}
+
+
+

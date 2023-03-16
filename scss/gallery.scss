@@ -1,0 +1,21 @@
+@import 'variables.scss';
+
+#galeria {
+  padding: $two-rm;
+  gap: 5rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+
+  & > div {
+    flex: 45%;
+    text-align: center;
+  }
+}
+
+.item {
+  font-size: $three-rm;
+  width: 100%;
+}
+
