@@ -1,7 +1,7 @@
 @import '../variables.scss';
 
 @mixin gridContainer--x-small() {
-  #grid_container {
+  .grid_container {
     display: flex;
     flex-direction: column;
     padding: $three-rm;
@@ -14,7 +14,7 @@
       display: none;
     }
 
-    & .elements_grid>p {
+    & .elements_grid > p {
       text-align: center;
     }
   }
@@ -27,11 +27,57 @@
   button {
     font-size: 1.7rem !important;
   }
+
+  .info-with-icon {
+    gap: 1rem;
+  
+    & > div {
+      flex-basis: 100%;
+      text-align: center;
+    }
+  
+    & > div > img {
+      width: 25%;
+      margin: 0.5rem;
+    }
+
+    & > div > b {
+      font-size: 1.2rem !important;
+    }
+  }
+
+  .hidden_not_mobile {
+    display: block;
+    width: 100%;
+  }
 }
 
 @mixin gridContainer--large() {
-  #grid_container {
+  .grid_container {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column-reverse;    
+  }
+
+  .hidden_not_mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .info-with-icon {
+    gap: 1rem;
+  
+    & > div {
+      flex-basis: 100%;
+      text-align: center;
+    }
+  
+    & > div > img {
+      width: 25%;
+      margin: 0.5rem;
+    }
+
+    & > div > b {
+      font-size: 1.2rem !important;
+    }
   }
 }

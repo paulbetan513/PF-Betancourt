@@ -1,5 +1,5 @@
 @media (max-width: 500px) {
-  #grid_container {
+  .grid_container {
     display: flex;
     flex-direction: column;
     padding: 3rem;
@@ -8,10 +8,10 @@
     box-sizing: border-box;
     justify-content: center;
   }
-  #grid_container .hidden_mobile {
+  .grid_container .hidden_mobile {
     display: none;
   }
-  #grid_container .elements_grid > p {
+  .grid_container .elements_grid > p {
     text-align: center;
   }
   #div_contact h3 {
@@ -20,6 +20,24 @@
   form input,
   button {
     font-size: 1.7rem !important;
+  }
+  .info-with-icon {
+    gap: 1rem;
+  }
+  .info-with-icon > div {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  .info-with-icon > div > img {
+    width: 25%;
+    margin: 0.5rem;
+  }
+  .info-with-icon > div > b {
+    font-size: 1.2rem !important;
+  }
+  .hidden_not_mobile {
+    display: block;
+    width: 100%;
   }
   #galeria {
     display: flex;
@@ -44,11 +62,33 @@
     font-size: 3rem;
     color: #35434f;
   }
+  .container_titles > p {
+    width: 75%;
+    font-size: 1.5rem;
+  }
 }
 @media (max-width: 992px) {
-  #grid_container {
+  .grid_container {
     display: flex;
     flex-direction: column-reverse;
+  }
+  .hidden_not_mobile {
+    display: block;
+    width: 100%;
+  }
+  .info-with-icon {
+    gap: 1rem;
+  }
+  .info-with-icon > div {
+    flex-basis: 100%;
+    text-align: center;
+  }
+  .info-with-icon > div > img {
+    width: 25%;
+    margin: 0.5rem;
+  }
+  .info-with-icon > div > b {
+    font-size: 1.2rem !important;
   }
   #container_redes {
     display: flex;

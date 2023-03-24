@@ -1,12 +1,25 @@
 @import 'variables.scss';
 
-#grid_container {
+.grid_container {
   display: flex;
   gap: 5rem;
   padding: 4.5rem 5rem 4.5rem 10rem;
   align-items: center;
   box-sizing: border-box;
   justify-content: center;
+}
+
+.hidden_not_mobile {
+  display: none;
+}
+
+.hr-custom {
+  position: absolute;
+  left: 0;
+}
+
+.grid-top {
+  align-items: baseline !important;
 }
 
 .elements_grid {
@@ -80,6 +93,36 @@ form input, button {
 textarea {
   width: 100%;
   resize: none;
+}
+
+#call-me  {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+
+.call-info {
+  flex-basis: 50%;
+}
+
+.info-with-icon {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+
+  & > div {
+    flex-basis: 60%;
+    text-align: center;
+  }
+
+  & > div > img {
+    width: 30%;
+    margin: 2rem;
+  }
 }
 
 

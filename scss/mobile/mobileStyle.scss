@@ -18,6 +18,13 @@
       color: $text-color;
     }
   }
+
+  .container_titles {  
+    & > p {
+      width: 75%;
+      font-size: $one-two-rm;
+    }
+  }
 }
 
 @mixin style--extra-large() {

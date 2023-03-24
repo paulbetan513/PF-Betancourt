@@ -83,6 +83,7 @@ header {
   width: $break-point-extra-extra-large;
   display: flex;
   position: fixed;
+  z-index: 9999;
   background-color: white;
 }
 
@@ -148,4 +149,21 @@ header {
     width: 75%;
     font-size: $two-rm;
   }
+}
+
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
 }
